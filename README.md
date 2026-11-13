@@ -1,16 +1,22 @@
-# React + Vite
+# Craftmeet
+¿Te gustaría conocer nuevas amistades a partir de talleres creativos? Craftmeet es una aplicación para poder conectar con usuarios cuyos hobbies son similares a los tuyos; reserva y guarda tu taller favorito. ¡Puede que tu próxima amistad esté a punto de empezar!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Equipo
+- Emma Casassas (@emmacasvil)
+- Xènia Jordán (@Xeniaa007)
+- Marina Rodríguez (@marinuugh)
 
-Currently, two official plugins are available:
+## Cómo arrancarla
+npm install
+npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Enlaces
+- Trello: https://trello.com/b/IeeMvVPz/dam-t3-marina-emma-y-xenia 
+- Referencia: https://dam-citm-26.github.io/referencias/craftmeet/ 
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Carpetas
+- src/components: componentes reutilizables
+- src/pages: una pantalla por fichero
+- src/data: datos de ejemplo
+- src/utils: funciones puras
+- docs: modelo de datos y componentes de cada pantalla
