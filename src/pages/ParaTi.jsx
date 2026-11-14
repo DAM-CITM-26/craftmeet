@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { TALLERES, INTERESES } from '../data/talleres.js';
-import { filtrarPorIntereses, alternar } from '../components/logica.js';
-import { ChipsIntereses, TarjetaTaller } from '../components/componentes.jsx';
+import { filtrarPorIntereses } from '../utils/filtrarPorIntereses.js';
+import { alternar } from '../utils/alternar.js';
+import { ChipsIntereses } from '../components/ChipsIntereses.jsx';
+import { TarjetaTaller } from '../components/TarjetaTaller.jsx';
 
-function App() {
-    // Estat de React
+export function ParaTi() { // O export default ParaTi, depèn de com ho cridis des de l'App principal
     const [interesesElegidos, setInteresesElegidos] = useState([]);
-    const [misReservas, /*setMisReservas*/ ] = useState(() => {
+    const [misReservas] = useState(() => {
         const guardado = localStorage.getItem('craftmeet-reservas');
         return guardado ? JSON.parse(guardado) : [];
     });
@@ -25,7 +26,8 @@ function App() {
                     <ChipsIntereses
                         intereses={INTERESES}
                         elegidos={interesesElegidos}
-                        onAlternar={handleAlternarInteres}
+                        // Nota: depèn de com hagis programat ChipsIntereses, 
+                        // potser rep 'onAlternar' o 'data-accion'. Revisa l'arxiu de ChipsIntereses.
                     />
                     <p className="card-meta">{talleresFiltrados.length} talleres</p>
                     <div className="grid">
@@ -50,5 +52,3 @@ function App() {
         </>
     );
 }
-
-export default App;
