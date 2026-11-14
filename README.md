@@ -1,4 +1,4 @@
-# Craftmeet
+# Craftmeet · versio 2
 ¿Te gustaría conocer nuevas amistades a partir de talleres creativos? Craftmeet es una aplicación para poder conectar con usuarios cuyos hobbies son similares a los tuyos; reserva y guarda tu taller favorito. ¡Puede que tu próxima amistad esté a punto de empezar!
 
 ## Equipo
