@@ -21,3 +21,4 @@
 | alternar(lista, elemento)                                                | src/utils/alternar.js                  | Lógica    |
 | plazasLibres(taller, misReservas)                                        | src/utils/plazasLibres.js              | Lógica    |
 | buscarTalleres(buscar, (talleres, { texto, categoria, precioMax }))      | src/utils/buscarTalleres.js            | Lógica    |
+|fechaCorta(fecha)                                                         | src/utils/fechaCorta.js                | Lógica    |
