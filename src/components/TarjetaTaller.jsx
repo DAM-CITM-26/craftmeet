@@ -1,3 +1,8 @@
+import { Portada } from './Portada.jsx';
+import { EtiquetaPlazas } from './EtiquetaPlazas.jsx';
+import { fechaCorta } from '../utils/fechaCorta.js';
+import { plazasLibres } from '../utils/plazasLibres.js';
+
 export function TarjetaTaller({ taller, misReservas }) {
     return (
         <a className="card" href={`#/taller/${taller.id}`}>
