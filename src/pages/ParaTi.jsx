@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { TALLERES, INTERESES } from '../data/talleres.js';
+import { TALLERES, INTERESES } from '../data/talleres.json';
 import { filtrarPorIntereses } from '../utils/filtrarPorIntereses.js';
 import { alternar } from '../utils/alternar.js';
 import { ChipsIntereses } from '../components/ChipsIntereses.jsx';
