@@ -6,7 +6,7 @@ Entidad: Taller
 | id          | Number              | 1                                       |
 | titulo      | String              | "Torno de cerámica para principiantes"  |
 | categoria   | String              | "Cerámica"                              |
-| fecha       | String (DD-MM-YYYY) | "21-11-2026"                            |
+| fecha       | String (YYYY-MM-DD) | "2026-11-23"                            |
 | hora        | String (HH:MM)      | "18:00"                                 |
 | lugar       | String              | "Gràcia"                                |
 | precio      | Number              | 35                                      |
