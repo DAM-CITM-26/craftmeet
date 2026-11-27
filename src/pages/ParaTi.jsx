@@ -1,31 +1,21 @@
-import { useState } from 'react';
-import { TALLERES, INTERESES } from '../data/talleres.json';
+import { useInteresesElegidos } from '../hooks/useInteresesElegidos.js';
+import { useMisReservas } from '../hooks/useMisReservas.js';
 import { filtrarPorIntereses } from '../utils/filtrarPorIntereses.js';
-import { alternar } from '../utils/alternar.js';
 import { ChipsIntereses } from '../components/ChipsIntereses.jsx';
 import { ListaTalleres } from '../components/ListaTalleres.jsx';
 
-
-export default function ParaTi() {
-    const [interesesElegidos, setInteresesElegidos] = useState([]);
-    const [misReservas] = useState(() => {
-        const guardado = localStorage.getItem('craftmeet-reservas');
-        return guardado ? JSON.parse(guardado) : [];
-    });
-
-    const handleAlternarInteres = (interes) => {
-        setInteresesElegidos((prev) => alternar(prev, interes));
-    };
-
-    const talleresFiltrados = filtrarPorIntereses(TALLERES, interesesElegidos);
+export default function ParaTi({ talleres, intereses }) {
+    const { elegidos, alternarInteres } = useInteresesElegidos();
+    const misReservas = useMisReservas();
+    const talleresFiltrados = filtrarPorIntereses(talleres, elegidos);
 
     return (
         <section className="seccion stack">
             <h2>¿Qué te apetece crear?</h2>
             <ChipsIntereses
-                intereses={INTERESES}
-                elegidos={interesesElegidos}
-                onAlternar={handleAlternarInteres}
+                intereses={intereses}
+                elegidos={elegidos}
+                onAlternar={alternarInteres}
             />
             <p className="card-meta">{talleresFiltrados.length} talleres</p>
             <ListaTalleres
