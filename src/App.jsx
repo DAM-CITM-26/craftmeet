@@ -1,4 +1,6 @@
 ﻿import ParaTi from './pages/ParaTi.jsx';
+import { TALLERES, INTERESES } from './data/talleres.json';
+
 
 export default function App() {
     return (
@@ -8,7 +10,7 @@ export default function App() {
                 <a className="tag tag-s1" href="#/alcance" title="Qué toca en cada sprint">Sprint 1</a>
             </header>
             <main id="app">
-                <ParaTi />
+            <ParaTi talleres={TALLERES} intereses={INTERESES} />            
             </main>
             <nav className="pestanas" aria-label="Secciones">
                 <a href="#/" className="activa">
