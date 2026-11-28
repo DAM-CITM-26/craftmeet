@@ -25,3 +25,6 @@
 | seccionActual()                                                          | src/utils/seccionActual.js             | Lógica    |
 | Navegacion()                                                             | src/components/Navegacion.jsx          | Organismo |
 | Layout()                                                                 | src/components/Layout.jsx              | Plantilla |
+| Buscador                                                                 | src/components/Buscador.jsx            | Molécula  |
+| FiltroPrecio                                                             | src/components/FiltroPrecio.jsx        | Molécula  |
+| Estado                                                                   | src/hooks/useBuscador.jsx              | Estado    |
