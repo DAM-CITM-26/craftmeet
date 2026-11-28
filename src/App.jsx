@@ -10,8 +10,8 @@ export default function App() {
     return (
         <Routes>
             <Route element={<Layout />}>
-                <Route index element={<ParaTi talleres={TALLERES} intereses={INTERESES} />} />
-                <Route path="buscar" element={<Buscar />} />
+                <Route index element={<ParaTi talleres={TALLERES} intereses={INTERESES} />} />       
+                <Route path="buscar" element={<Buscar talleres={TALLERES} intereses={INTERESES} />} />
                 <Route path="taller/:id" element={<Taller />} />
                 <Route path="*" element={<NoEncontrado />} />
             </Route>
