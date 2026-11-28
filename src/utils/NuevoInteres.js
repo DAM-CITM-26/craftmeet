@@ -1,0 +1,1 @@
+export const NuevoInteres = (talleres) => [...new Set(talleres.map((taller) => taller.categoria))];

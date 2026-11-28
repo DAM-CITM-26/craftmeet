@@ -7,10 +7,14 @@ const EMOJI_CATEGORIA = {
     Papel: '📜'
 };
 
+const OTROS = '✨';
+
+
 export function Portada({ taller }) {
     return (
         <div className="portada" style={{ background: 'var(--color-acento)' }} aria-hidden="true">
-            {EMOJI_CATEGORIA[taller.categoria]}
+            {EMOJI_CATEGORIA[taller.categoria] ?? OTROS}
         </div>
     );
 }
+

@@ -1,9 +1,8 @@
-
 const PRECIOS = [20, 30, 40];
 
 export function FiltroPrecio({ valor, onCambiar }) {
     return (
-        <label className="campo">
+        <label className="field">
             Precio máximo
             <select value={valor} onChange={(evento) => onCambiar(evento.target.value)}>
                 <option value="Cualquiera">Cualquiera</option>
@@ -16,4 +15,3 @@ export function FiltroPrecio({ valor, onCambiar }) {
         </label>
     );
 }
-
